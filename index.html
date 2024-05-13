@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku Solver</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>WELCOME TO SUDOCRAZE:  THE SUDOKU SOLVER.</h1>
+        <h2>
+            Please Enter Your Puzzle Here !!!
+        </h2>
+        <table class="table" id="sudoku">
+            <tbody>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+                <tr>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                    <td><input class="input" type="text" oninput="this.value=checkInput(this.value)" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="button" value="SOLVE" id="solve" class="solve" onclick="main(document.getElementById('sudoku'))">
+        <input type="button" value="RESET" id="reset" class="reset" onclick="resetInputs()">
+    </div>
+    <script src="sudokuSolver.js"></script>
+</body>
+
+</html>
